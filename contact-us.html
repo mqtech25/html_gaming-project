@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Develop By Developer</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(to right, #000000, #434343); 
+        
+    }
+    .box{
+        border: none;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        padding: 10px;
+        width: 40%;
+        height: 300px;
+        margin: 0 auto;    
+    }
+    form{
+       margin-top: 10px;
+    }
+    label{
+      
+        display: block;
+        line-height: 2;
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    input{
+        width: 100%;
+        color: white;
+        outline: none;
+        background: transparent;
+        display: block;
+        margin-top: 6px;
+        padding: 7px 0px;
+        border:none;
+        font-size: 18px;
+        border-bottom: 2px solid white;
+    }
+    input::placeholder{
+        color: white;
+        font-size: 18px;
+    }
+    input[type="submit"]{
+        margin-top:15px;
+        padding:12px 17px;
+        font-size:18px;
+        font-weight: 600;
+        cursor: pointer;
+        outline: none;
+    }
+    input[type="submit"]:hover{
+        background-color: black;
+        color: white;
+        transition: all ease 0.4s; 
+    }
+
+    </style>
+</head>
+<body>
+   <div class="box">
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email">
+        <label for="message">Message</label>
+        <textarea name="message" id="" cols="70" rows="5" placeholder="Type message"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+   </div>
+</body>
+</html>
